@@ -2,7 +2,7 @@ package aula04;
 
 import java.util.Scanner;
 
-public class teste {
+public class Teste {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -39,6 +39,11 @@ public class teste {
 		}
 
 		System.out.println("Quantidade de notas menores que 6: " + count);
-		return;
+				
+		double maiorNota = Math.max(nota1, Math.max(nota2, nota3));
+		double menorNota = Math.min(nota1, Math.min(nota2, nota3));
+		
+		System.out.println("Maior nota: " + maiorNota);
+		System.out.println("Menor nota: " + menorNota);
 	}
 }
